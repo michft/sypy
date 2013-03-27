@@ -9,9 +9,5 @@
 {% block content %}
   <h1>Index</h1>
   <p class="important">
-
-  {% with open('/home/clete/ansible_hosts') as fp: %}
-    {% for line in iter(fp.readline, ''):%}
-        <li><h2><a href="{{ entry }}"> {% {{ entry }}.split(".")[0] %} </a></h2>
-    
+     Welcome on my awesome page. <br />(Yes, it's straight from the Flask tutorial)
 {% endblock %}
